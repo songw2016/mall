@@ -16,9 +16,9 @@ jwt:
 aliyun:
   oss:
     endpoint: oss-cn-shenzhen.aliyuncs.com
-    accessKeyId: test
-    accessKeySecret: test
-    bucketName: macro-oss
+    accessKeyId: LTAITOJJFXHRzXmW
+    accessKeySecret: wLoMlGHgy07RrJo0Q0id9EsPThG5Hn
+    bucketName: img-mall-oss
     policy:
       expire: 300
     maxSize: 10
