@@ -172,6 +172,9 @@ public class UmsAdminServiceImpl implements UmsAdminService {
     @Override
     public int update(Long id, UmsAdmin admin) {
         admin.setId(id);
+        //将密码进行加密操作
+        String md5Password = passwordEncoder.encode(admin.getPassword());
+        admin.setPassword(md5Password);
         return adminMapper.updateByPrimaryKey(admin);
     }
 
